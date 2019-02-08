@@ -6,4 +6,17 @@
             <class name="_2_SecondTestCase"/>
         </classes>
     </test>
+
+    <test name="Car loan" >
+        <classes>
+            <class name="_3_ThirdTestCases"/>
+        </classes>
+    </test>
+
+    <test name="Home loan" >
+        <classes>
+            <class name="_4_FourthTestCases"/>
+        </classes>
+    </test>
+
 </suite>
