@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="example suite 1" verbose="1" >
-    <test name="Regression suite 1" >
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="example suite 1" verbose="1">
+
+    <!-- <test name="Regression suite 1">
+         <classes>
+             <class name="_1_BasicScript"/>
+             <class name="_2_SecondTestCase"/>
+         </classes>
+     </test>-->
+
+
+    <test name="Car loan">
         <classes>
-            <class name="_1_BasicScript"/>
-            <class name="_2_SecondTestCase"/>
+            <class name="_3_ThirdTestCases">
+                <methods>
+                    <include name="WebLoginCarLoan"/>
+                    <include name="LoginApiCarLoan"/>
+                </methods>
+            </class>
         </classes>
     </test>
 
-    <test name="Car loan" >
+    <test name="Home loan">
         <classes>
-            <class name="_3_ThirdTestCases"/>
-        </classes>
-    </test>
-
-    <test name="Home loan" >
-        <classes>
-            <class name="_4_FourthTestCases"/>
+            <class name="_4_FourthTestCases">
+                <methods>
+                    <exclude name="MobileLoginHomeLoan"/>
+                </methods>
+            </class>
         </classes>
     </test>
 
