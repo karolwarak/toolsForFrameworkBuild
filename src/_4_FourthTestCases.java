@@ -9,7 +9,21 @@ public class _4_FourthTestCases {
     }
 
     @Test
-    public void MobileLoginHomeLoan(){
+    public void MobileLoginHomeLoan1(){
+        System.out.println("Mobile login home ");
+
+
+    }
+
+    @Test
+    public void MobileLoginHomeLoan2(){
+        System.out.println("Mobile login home ");
+
+
+    }
+
+    @Test
+    public void MobileLoginHomeLoan3(){
         System.out.println("Mobile login home ");
 
 

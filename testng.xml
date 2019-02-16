@@ -25,7 +25,7 @@
         <classes>
             <class name="_4_FourthTestCases">
                 <methods>
-                    <exclude name="MobileLoginHomeLoan"/>
+                    <exclude name="Mobile.*"/>
                 </methods>
             </class>
         </classes>
