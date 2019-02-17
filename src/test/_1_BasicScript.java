@@ -6,7 +6,7 @@ public class _1_BasicScript {
 
     @Test
     public void firstTestInTestNg(){
-        System.out.println("firs test with testNG annotation");
+        System.out.println("first test with testNG annotation");
     }
 
     @Test
