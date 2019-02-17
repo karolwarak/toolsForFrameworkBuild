@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="example suite 1" verbose="1">
+
+    <test name="Regression">
+
+        <groups>
+            <run>
+                <include name="Smoke"/>
+
+                <!--<exclude name="Smoke"/>-->
+            </run>
+        </groups>
+
+        <classes>
+            <class name="test._1_BasicScript"/>
+            <class name="test._2_SecondTestCase"/>
+            <class name="_3_ThirdTestCases"/>
+            <class name="_4_FourthTestCases"/>
+        </classes>
+    </test>
+
+
+</suite>

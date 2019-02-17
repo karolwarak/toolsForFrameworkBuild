@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class _1_BasicScript {
 
-    @Test
+    @Test (groups = {"Smoke"})
     public void firstTestInTestNg(){
         System.out.println("first test with testNG annotation");
     }

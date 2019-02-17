@@ -9,12 +9,12 @@ public class _2_SecondTestCase {
 
 
     @Test
-    public void firstTestInTestNg(){
-        System.out.println("third test with testNG annotation");
+    public void thirdTestInTestNg(){
+        System.out.println("third test");
     }
 
-    @Test
-    public void secondTest(){
+    @Test (groups = {"Smoke"})
+    public void fourthTest(){
         System.out.println("fourth test");
     }
 }

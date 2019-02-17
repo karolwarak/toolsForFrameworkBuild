@@ -21,14 +21,21 @@ public class _3_ThirdTestCases {
         System.out.println("I will execute first");
     }
 
+    @BeforeClass
+    public void beforeThisClassExecution(){
+        // will executed before all methods from this class
+        // class level annotation
+        System.out.println("I will be executed before this class");
+    }
+
     @BeforeMethod
     public void beforeEveryTest(){
-        // will executed before very method execution
-
+        // will executed before every method execution
+        // class level annotation
         System.out.println("I will execute before every method in _3_ThirdTestCases class file ");
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void WebLoginCarLoan(){
         // selenium code
         System.out.println("Web login car ");
@@ -47,8 +54,16 @@ public class _3_ThirdTestCases {
 
     @AfterMethod
     public void afterEveryTest(){
+        // class level annotation
 
         System.out.println("I will execute after every method in _3_ThirdTestCases class file ");
+    }
+
+    @AfterClass
+    public void afterThisClassExecution(){
+        // will executed after all methods from this class
+        // class level annotation
+        System.out.println("I will be executed after this class");
     }
 
     @AfterTest

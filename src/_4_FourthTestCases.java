@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 public class _4_FourthTestCases {
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void WebLoginHomeLoan(){
         // selenium code
         System.out.println("Web login home ");
