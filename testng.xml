@@ -4,8 +4,8 @@
 
     <!-- <test name="Regression suite 1">
          <classes>
-             <class name="_1_BasicScript"/>
-             <class name="_2_SecondTestCase"/>
+             <class name="test._1_BasicScript"/>
+             <class name="test._2_SecondTestCase"/>
          </classes>
      </test>-->
 
