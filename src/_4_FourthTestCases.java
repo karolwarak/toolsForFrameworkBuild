@@ -1,11 +1,14 @@
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class _4_FourthTestCases {
 
+    @Parameters({"URL"}) // take value of URL from xml file but
+    // I have to run this test case (method) from testng3.xml file
     @Test(groups = {"Smoke"})
-    public void WebLoginHomeLoan(){
+    public void WebLoginHomeLoan(String pageUrl){ // pass parameter to methods variable
         // selenium code
-        System.out.println("Web login home ");
+        System.out.println(pageUrl);
     }
 
     @Test(timeOut = 40000)

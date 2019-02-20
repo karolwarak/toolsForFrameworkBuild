@@ -2,7 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="example suite 1" verbose="1">
 
+    <!--  suit level parametrization
+            available in whole suit folder -->
+    <parameter name="URL" value="http://www.qaclickacademy.com/"/>
+
+
     <test name="Regression">
+
+        <!--  test level parametrization
+                available only in this test folder -->
+        <parameter name="URL" value="http://www.qaclickacademy.com/"/>
 
         <groups>
             <run>
