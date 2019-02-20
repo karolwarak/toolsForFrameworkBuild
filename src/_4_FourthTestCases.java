@@ -8,7 +8,8 @@ public class _4_FourthTestCases {
         System.out.println("Web login home ");
     }
 
-    @Test
+    @Test(timeOut = 40000)
+    // set specific time to wait until method will finished
     public void MobileLoginHomeLoan1(){
         System.out.println("Mobile login home ");
 
@@ -17,19 +18,21 @@ public class _4_FourthTestCases {
 
     @Test
     public void MobileLoginHomeLoan2(){
-        System.out.println("Mobile login home ");
+        System.out.println("Mobile login home2 ");
 
 
     }
 
-    @Test
+    @Test(enabled = false)
+    // will skip this method during execution
     public void MobileLoginHomeLoan3(){
-        System.out.println("Mobile login home ");
+        System.out.println("Mobile login home3");
 
 
     }
 
-    @Test
+    @Test(dependsOnMethods = {"WebLoginHomeLoan", "MobileLoginHomeLoan2"})
+    // this method will execute after method WebLoginHomeLoan
     public void LoginApiHomeLoan(){
         // rest API automation
         System.out.println("API login home ");
